@@ -10,13 +10,13 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import { environment } from '../environments/environment';
 
 //components
-import { ProductsComponent } from './components/products/products.component';
-import { ProductListComponent } from './components/products/product-list/product-list.component';
-import { ProductComponent } from './components/products/product/product.component';
+import { GradesComponent } from './components/grades/grades.component';
+import { GradeListComponent } from './components/grades/grade-list/grade-list.component';
+import { GradeComponent } from './components/grades/grade/grade.component';
 
 
 //services
-import { ProductService } from './services/product.service';
+import { GradeService } from './services/grade.service';
 
 //animations
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -25,9 +25,9 @@ import { ToastrModule} from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsComponent,
-    ProductListComponent,
-    ProductComponent
+    GradeComponent,
+    GradeListComponent,
+    GradesComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +38,7 @@ import { ToastrModule} from 'ngx-toastr';
     ToastrModule.forRoot()
   ],
   providers: [
-    ProductService
+    GradeService
   ],
   bootstrap: [AppComponent]
 })

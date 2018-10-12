@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card-body">
+    <h6 class="text-center">List of grades</h6>
+    <table class="table table-sm table-hover">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Description</td>
+          <td>Percentage</td>
+          <td>Value</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let grade of gradeList">
+          <td>{{ grade.name }}</td>
+          <td>{{ grade.description }}</td>
+          <td>{{ grade.percentage }}</td>
+          <td>{{ grade.value }}</td>
+          <a class="btn btn-secondary text-white mx-1" (click)="onEdit(grade)">
+            <i class="fas fa-edit"></i>
+          </a>
+          <a class="btn btn-danger text-white" (click)="onDelete(grade.$key)">
+              <i class="fas fa-trash-alt"></i>
+            </a>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
