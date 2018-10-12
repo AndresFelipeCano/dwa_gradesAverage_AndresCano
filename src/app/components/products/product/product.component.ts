@@ -14,8 +14,8 @@ import {ToastrService} from 'ngx-toastr';
 export class ProductComponent implements OnInit {
 
   constructor(
-    private productService: ProductService,
-    private toastrService: ToastrService
+    public productService: ProductService,
+    public toastrService: ToastrService
     ) { }
 
   ngOnInit() {
