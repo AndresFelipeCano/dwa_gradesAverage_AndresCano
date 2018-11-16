@@ -7,7 +7,9 @@ import {FormsModule} from '@angular/forms';
 //firebase
 import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
+import {AngularFireAuthModule} from 'angularfire2/auth';
 import { environment } from '../environments/environment';
+
 
 //components
 import { GradesComponent } from './components/grades/grades.component';
@@ -18,9 +20,11 @@ import { GradeComponent } from './components/grades/grade/grade.component';
 //services
 import { GradeService } from './services/grade.service';
 
+
 //animations
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ToastrModule} from 'ngx-toastr';
+
 
 @NgModule({
   declarations: [
@@ -35,10 +39,12 @@ import { ToastrModule} from 'ngx-toastr';
     AngularFireDatabaseModule,
     FormsModule,
     BrowserAnimationsModule,
+    AngularFireAuthModule,
     ToastrModule.forRoot()
   ],
   providers: [
     GradeService
+
   ],
   bootstrap: [AppComponent]
 })

@@ -9,7 +9,7 @@
           name="name"
           #name="ngModel"
           [(ngModel)]="gradeService.selectedGrade.name"
-          placeholder="Add Grade Name">
+          placeholder="Nombre de la nota">
       </div>
 
       <div class="form-group">
@@ -19,7 +19,7 @@
             name="percentage"
             #percentage="ngModel"
             [(ngModel)]="gradeService.selectedGrade.percentage"
-            placeholder="Add Grade Percentage">
+            placeholder="Porcentaje de la nota">
         </div>
 
       <div class="form-group">
@@ -29,7 +29,7 @@
             name="description"
             #description="ngModel"
             [(ngModel)]="gradeService.selectedGrade.description"
-            placeholder="Add grade description">
+            placeholder="Descripción de la nota">
       </div>
 
       <div class="form-group">
@@ -39,15 +39,15 @@
             name="value"
             #value="ngModel"
             [(ngModel)]="gradeService.selectedGrade.value"
-            placeholder="Add Grade value">
+            placeholder="Valor de la nota">
       </div>
 
       <div class="form-group">
         <button class="btn btn-primary mx-1" type="submit">
-          <i class="fas fa-plus-circle"></i>Add Grade
+          <i class="fas fa-plus-circle"></i>
         </button>
         <button class="btn btn-secondary" type="reset" (click)="resetForm(gradeForm)">
-            <i class="fas fa-sync-alt"></i>Reset
+            <i class="fas fa-sync-alt"></i>
           </button>
       </div>
     </form>
