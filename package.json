@@ -26,7 +26,7 @@
     "core-js": "2.5.7",
     "firebase": "5.5.3",
     "font-awesome": "4.7.0",
-    "ngx-toastr": "9.1.0",
+    "ngx-toastr": "9.2.0",
     "rxjs": "6.2.2",
     "zone.js": "0.8.26"
   },
